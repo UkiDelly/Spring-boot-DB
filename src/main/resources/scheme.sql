@@ -1,4 +1,3 @@
-
 create table if not exists course
 (
     id bigint not null,
@@ -6,5 +5,8 @@ create table if not exists course
     author varchar(255) not null,
 
     primary key (id)
+);
 
-)
+select * from COURSE;
+insert into COURSE(ID,NAME,AUTHOR)
+values ( 1,'Learn AWS', 'in28minutes' );
