@@ -32,7 +32,7 @@ public class CourseJpaRepository {
     }
 
     public void deleteById(Long id){
-        Course course = findById(id);
+        final Course course = findById(id);
         entityManager.remove(course);
     }
 }

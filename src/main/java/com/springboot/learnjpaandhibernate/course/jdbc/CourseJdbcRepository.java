@@ -6,6 +6,9 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 @Repository
 public class CourseJdbcRepository {
 
@@ -39,5 +42,10 @@ public class CourseJdbcRepository {
         return springJdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<>(Course.class),id);
         // Result -> Bean 변환을 위해선 Row Mapper을 사용한다.
          // 현재 DB의 컬럼명과 Course의 property 이름이 같으므로, BeanPropertRowMapper를 사용한다.
+     }
+
+
+
+     public void fun(){
      }
 }

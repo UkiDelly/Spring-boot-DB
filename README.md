@@ -123,3 +123,7 @@ public class CourseJpaRepository {
 `Repository`로 사용할 클래스를 지정하고 `@Repository`어노테이션과 트랜잭션 사용을 위해 `@Transaction`어노테이션을 추가한다. 
 
 JPA는 `EntityManager`를 통해 엔티티를 관리하고, 쿼리를 실행시킬수 있다. `@Autowired`를 사용하여 자동연결을 해줘도 되지만, EntityManager이라면 `@PersistenceContext` 어노테이션을 사용하여 자동 연결하는게 더 좋다.
+
+---
+
+## Spring Data JPA
