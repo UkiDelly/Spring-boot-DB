@@ -1,7 +1,18 @@
 package com.springboot.learnjpaandhibernate.course;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+
+// 테이블 이름을 변경하고 싶으면 name을 이용
+@Entity
 public class Course {
+
+    @Id
     private Long id;
+
+    // 테이블명과 같으므로, @Column 어노테이션이 필요 없음
     private String name;
     private String author;
 
